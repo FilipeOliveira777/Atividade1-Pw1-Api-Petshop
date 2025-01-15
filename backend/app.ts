@@ -1,10 +1,9 @@
 import express from 'express';
-import routes from './routes/routes';
+import petshopRoutes from './routes/routes';
 
 const app = express();
 
 app.use(express.json());
-app.use(routes);
-
+app.use(petshopRoutes);
 
 export default app;
